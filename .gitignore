@@ -1,0 +1,28 @@
+# Exclude the .env file to prevent sensitive data from being pushed to the repository
+.env
+
+# Ignore SSH keys and related files
+*.pem
+*.key
+/root/.ssh/
+
+# Python-specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Vim swap files
+*.swp
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Docker-related ignores
+.dockerignore
+docker-compose.override.yml
+
+# Ignore workspace directory if it contains temporary or large files
+workspace/

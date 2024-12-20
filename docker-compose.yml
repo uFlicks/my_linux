@@ -1,0 +1,13 @@
+services:
+  dev-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GIT_USER_NAME: ${GIT_USER_NAME}
+        GIT_USER_EMAIL: ${GIT_USER_EMAIL}
+    volumes:
+      - ./workspace:/workspace
+    env_file:
+      - .env
+    tty: true

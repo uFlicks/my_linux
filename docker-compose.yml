@@ -1,5 +1,6 @@
 services:
   dev-container:
+    container_name: ${CONTAINER_NAME}
     build:
       context: .
       dockerfile: Dockerfile
@@ -8,6 +9,7 @@ services:
         GIT_USER_EMAIL: ${GIT_USER_EMAIL}
     volumes:
       - ./workspace:/workspace
+      - ./setup:/setup
     env_file:
       - .env
     tty: true

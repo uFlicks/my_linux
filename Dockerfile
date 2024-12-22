@@ -11,7 +11,7 @@ RUN apt-get install -y python3 python3-venv python3-pip vim git openssh-client
 RUN python3 -m venv /venv
 
 # Activate the virtual environment and install pandas
-RUN /venv/bin/pip install pandas
+RUN /venv/bin/pip install pandas numpy
 
 # Set up Git configuration using environment variables
 ARG GIT_USER_NAME

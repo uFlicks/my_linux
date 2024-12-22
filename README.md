@@ -30,6 +30,7 @@ touch .env
 ```bash
 GIT_USER_NAME=Your Name
 GIT_USER_EMAIL=your_email@example.com
+CONTAINER_NAME=example-container
 ```
 ### 4. Build the Docker Image
 Now, use Docker Compose to build the image and set up the container. Run the following command in the root of your repository:

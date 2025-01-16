@@ -1,4 +1,4 @@
 #!/bin/bash
 
-apt install wget curl unzip -y
+apt install wget curl unzip nodejs npm -y
 

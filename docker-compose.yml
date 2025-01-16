@@ -13,3 +13,9 @@ services:
     env_file:
       - .env
     tty: true
+    ports:
+      - "8000:8000"  # FastAPI
+      - "5173:5173"  # Vite-React
+      - "5432:5432"  # PostgreSQL
+      - "8080:8080"  # Airflow
+      - "5000:5000"  # Extra
